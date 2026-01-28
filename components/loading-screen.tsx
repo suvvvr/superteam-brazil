@@ -64,7 +64,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
       }`}
       style={{ backgroundColor: BACKGROUND_COLOR }}
     >
-      <div className="flex items-center gap-6 px-4" style={{ maxWidth: "95vw", overflow: "hidden" }}>
+      <div className="flex items-center gap-6  px-8 w-full">
         {/* Spinning Logo */}
         <div
           className={`transition-opacity duration-[400ms] ease-out ${
@@ -85,8 +85,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
         </div>
 
         {/* Typewriter Text */}
-        <div className="flex items-baseline overflow-visible pr-8" style={{ letterSpacing: "1.5px", whiteSpace: "nowrap" }}>
-
+        <div className="flex items-baseline overflow-visible" style={{ letterSpacing: "1.5px", whiteSpace: "nowrap", minWidth: "0" }}>
           {fullText.split("").map((char, index) => {
             const isSuperteam = index < superteamEnd
             const isSpace = char === " "
