@@ -94,7 +94,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
             return (
               <span
                 key={index}
-                className={`inline-block transition-all duration-150 ease-out ${
+                className={`inline-block transition-all duration-150 ease-out overflow-visible ${
                   isVisible
                     ? "opacity-100 scale-100"
                     : "opacity-0 scale-[0.8]"
