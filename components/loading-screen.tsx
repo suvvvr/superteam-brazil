@@ -96,13 +96,13 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                 key={index}
                 className={`inline-block transition-all duration-150 ease-out overflow-visible ${
                   isVisible
-                    ? "opacity-100 scale-100"
-                    : "opacity-0 scale-[0.8]"
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-[0.8]"
                 }`}
                 style={{
-                  fontSize: "32px",
-                  lineHeight: "1.4",
-                  paddingTop: "0.15em"
+                fontSize: "32px",
+                lineHeight: "1.6",
+                  paddingBottom: "0.15em",
                   fontWeight: isSuperteam ? 700 : 400,
                   fontFamily: isSuperteam
                     ? "var(--font-display), 'Bungee', sans-serif"
