@@ -1,4 +1,3 @@
-# superteam-brazil
 # Superteam Brazil Landing Page
 
 ## Design & Development
