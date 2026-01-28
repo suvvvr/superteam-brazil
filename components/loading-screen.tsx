@@ -102,6 +102,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                 style={{
                   fontSize: "32px",
                   lineHeight: "1.4",
+                  paddingTop: "0.15em"
                   fontWeight: isSuperteam ? 700 : 400,
                   fontFamily: isSuperteam
                     ? "var(--font-display), 'Bungee', sans-serif"
