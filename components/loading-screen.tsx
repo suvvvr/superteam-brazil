@@ -11,7 +11,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
   const [logoVisible, setLogoVisible] = useState(false)
   const [visibleChars, setVisibleChars] = useState(0)
 
-  const fullText = "Superteam\nBrazil"
+  const fullText = "Superteam Brazil"
   const superteamEnd = 9 // "Superteam" is 9 characters
 
   const handleComplete = useCallback(() => {
