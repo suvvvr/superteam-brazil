@@ -85,7 +85,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
         </div>
 
         {/* Typewriter Text */}
-        <div className="flex items-baseline overflow-visible flex-shrink-0" style={{ letterSpacing: "1.5px", whiteSpace: "nowrap", minWidth: "fit-content" }}>
+       <div className="flex items-center overflow-visible flex-shrink-0" style={{ letterSpacing: "1.5px", whiteSpace: "nowrap", minWidth: "fit-content" }}>
           {fullText.split("").map((char, index) => {
             const isSuperteam = index < superteamEnd
             const isSpace = char === " "
@@ -101,6 +101,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                 }`}
                 style={{
                   fontSize: "32px",
+                  lineHeight: "1.4",
                   fontWeight: isSuperteam ? 700 : 400,
                   fontFamily: isSuperteam
                     ? "var(--font-display), 'Bungee', sans-serif"
