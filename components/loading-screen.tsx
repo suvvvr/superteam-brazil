@@ -64,7 +64,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
       }`}
       style={{ backgroundColor: BACKGROUND_COLOR }}
     >
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6" style={{ minWidth: "fit-content" }}>
         {/* Spinning Logo */}
         <div
           className={`transition-opacity duration-[400ms] ease-out ${
